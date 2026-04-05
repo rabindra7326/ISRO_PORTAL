@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Remote Sensing Education Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:#0b3c5d;
+  padding:15px 40px;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+header h1{
+  font-size:22px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#00d4ff;
+}
+
+/* HERO FULL SCREEN IMAGE */
+.hero{
+  min-height:100vh;
+  width:100%;
+  background-image:url("images/homepage.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+}
+
+/* Overlay */
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:40px;
+  border-radius:12px;
+}
+
+.hero h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.hero button{
+  padding:12px 30px;
+  background:#00d4ff;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  color:#0b3c5d;
+  cursor:pointer;
+}
+
+.hero button:hover{
+  background:white;
+}
+
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:40px;
+  color:#0b3c5d;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  text-align:center;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  color:#1e90ff;
+  margin-bottom:10px;
+}
+
+/* ABOUT */
+.about-box{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  background:#0b3c5d;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1> Remote Sensing Education</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="feature.html">Features</a>
+    <a href="abt.html">About</a>
+  </nav>
+</header>
+
+<header>
+  <nav>
+<div id="authLinks">
+    <a href="login.html" id="loginLink">Login</a>
+    <a href="signup.html" id="signupLink">Signup</a>
+    <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
+</div>
+  </nav>
+</header>  
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Remote Sensing & GIS Learning Platform</h2>
+    <p>Mobile Full Stack Application inspired by ISRO Education Portal</p>
+  
+  </div>
+</section>
+
+
+<section id="courses">
+<h2 class="section-title">Courses Offered</h2>
+
+<div class="cards">
+  <div class="card" onclick="goCourses()">
+    <h3>Remote Sensing Basics</h3>
+    <p>Learn satellite imaging, sensors, and Earth observation concepts.</p>
+  </div>
+
+  <div class="card" onclick="goCourses()">
+    <h3>GIS Fundamentals</h3>
+    <p>Understand spatial data, layers, and digital mapping techniques.</p>
+  </div>
+
+  <div class="card" onclick="goCourses()">
+    <h3>Satellite Image Analysis</h3>
+    <p>Explore practical image interpretation using GIS tools.</p>
+  </div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+<h2 class="section-title">Key Features</h2>
+
+<div class="cards">
+  <div class="card" onclick="goFeatures()">
+    <h3>Mobile Learning</h3>
+    <p>Anytime, anywhere access to educational content.</p>
+  </div>
+
+  <div class="card" onclick="goFeatures()">
+    <h3>Interactive Maps</h3>
+    <p>Satellite and map layer visualization.</p>
+  </div>
+
+  <div class="card" onclick="goFeatures()">
+    <h3>Practical Exposure</h3>
+    <p>Integration with GIS tools like QGIS.</p>
+  </div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About This Project</h2>
+<div class="about-box">
+<p>
+This project provides a mobile-based learning platform for Remote Sensing and GIS using ISRO-inspired content.
+This project aims to develop a mobile-based education portal for learning Remote Sensing and GIS concepts inspired by ISRO resources. It provides students with easy access to study materials, practical tools, and interactive maps to understand satellite data and Earth observation. The system helps beginners build a strong foundation in geospatial technologies through a user-friendly and modern learning platform.
+</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 ISRO Remote Sensing Education Portal</p>
+</footer>
+
+<script>
+
+function getStarted(){
+  alert("Welcome! Please login or register to continue.");
+}
+
+function goCourses(){
+  alert("For more go to Courses page");
+}
+
+function goFeatures(){
+  alert(" To know about more go to Features page");
+}
+
+</script>
+
+
+</body>
+</html>

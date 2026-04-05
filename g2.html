@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GIS Module 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* HEADER */
+.main-header{
+background:#0b3c5d;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{
+color:white;
+font-size:22px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+/* HERO */
+.home-hero{
+height:93vh;
+background:url("images/basiccor.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:50px;
+margin-top:338px;
+border-radius:10px;
+text-align:center;
+color:white;
+}
+
+.overlay h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+/* SECTION */
+.section{
+padding:60px;
+background:white;
+max-width:1100px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+color:#0b3c5d;
+}
+
+h3{
+margin-top:20px;
+color:#0b3c5d;
+}
+
+.back-btn{
+display:block;
+margin:30px auto;
+padding:10px 25px;
+background:#1e90ff;
+color:white;
+text-align:center;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="logo">
+    <h1>ISRO Remote Sensing Education Portal</h1>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="feature.html">Features</a>
+    <a href="abt.html">About</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="overlay">
+    <h2>Module 2: Spatial Data & Models</h2>
+    <p>Understanding GIS data structures and sources</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+
+<h2 class="title">Course Content</h2>
+
+<h3>1. Spatial Data</h3>
+<p>
+Spatial data represents the geographic location and characteristics of features on Earth. 
+It includes both location (coordinates) and attribute information.
+</p>
+
+<h3>2. Vector Data</h3>
+<p>
+Vector data represents real-world objects using points (locations), lines (roads), 
+and polygons (areas like lakes or boundaries).
+</p>
+
+<h3>3. Raster Data</h3>
+<p>
+Raster data is made up of pixels arranged in a grid format. 
+It is commonly used for satellite imagery and elevation data.
+</p>
+
+<h3>4. Data Sources</h3>
+<p>
+Spatial data can be collected from satellites, GPS, field surveys, drones, 
+and existing digital databases.
+</p>
+
+<!-- <img src="images/gis2.jpg" style="width:100%;margin-top:20px;border-radius:10px;"> -->
+
+<a href="index.html" class="back-btn">← Back</a>
+
+</section>
+
+</body>
+</html>

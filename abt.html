@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | ISRO Remote Sensing Education Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f8;
+  color:#222;
+}
+
+/* ================= HEADER ================= */
+header{
+  background:#0b3c5d;
+  padding:15px 40px;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:600;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:16px;
+}
+
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* ================= HERO ================= */
+.hero{
+  background:
+   linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+   url("https://source.unsplash.com/1600x900/?satellite,space,earth");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:120px 8%;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:18px;
+  line-height:1.6;
+}
+
+/* ================= SECTION ================= */
+section{
+  padding:70px 8%;
+}
+
+.section-title{
+  font-size:28px;
+  color:#0b3c5d;
+  margin-bottom:30px;
+}
+
+/* ================= TWO COLUMN ================= */
+.two-column{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.two-column img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* ================= IMAGE GALLERY ================= */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* ================= CARDS ================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+  color:#0b3c5d;
+  margin-bottom:10px;
+}
+
+.card ul{
+  padding-left:20px;
+  line-height:1.6;
+}
+
+/* ================= MAP ================= */
+.map iframe{
+  width:100%;
+  height:350px;
+  border:0;
+  border-radius:10px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#0b3c5d;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .two-column{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">ISRO Remote Sensing Education Portal</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="feature.html">Features</a>
+    <a href="abt.html">About</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>About Our Project</h1>
+  <p>
+    A digital education platform dedicated to empowering learners with
+    knowledge and practical skills in Remote Sensing, GIS and satellite
+    data analysis.
+  </p>
+</div>
+
+<!-- PROJECT OVERVIEW -->
+<section>
+  <div class="two-column">
+    <div>
+      <h2 class="section-title">Project Overview</h2>
+      <p>
+        The ISRO Remote Sensing Education Portal is a centralized web and
+        mobile platform designed to provide structured learning resources,
+        tools and datasets related to Remote Sensing and Geospatial
+        Technologies.
+      </p>
+      <p style="margin-top:12px;">
+        The portal focuses on bridging the gap between theoretical
+        knowledge and practical implementation by offering hands-on
+        exercises using real satellite data.
+      </p>
+    </div>
+
+    <img src="https://source.unsplash.com/800x600/?gis,earth" alt="">
+  </div>
+</section>
+
+<!-- PURPOSE -->
+<section>
+  <h2 class="section-title">Purpose of This Project</h2>
+  <div class="cards">
+    <div class="card">
+      <p>
+        To create a single platform where students and researchers can
+        learn, practice and explore Remote Sensing concepts without
+        relying on multiple scattered resources.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        To support academic institutions by providing an online learning
+        environment aligned with modern geospatial education needs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY REQUIRED -->
+<section>
+  <h2 class="section-title">Why This Project Is Required</h2>
+  <div class="cards">
+    <div class="card">
+      <p>
+        Many students face difficulty accessing quality learning
+        materials and real datasets for Remote Sensing.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        Existing resources are scattered across multiple platforms,
+        making learning complex and time-consuming.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        There is a growing demand for skilled professionals in
+        geospatial technologies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT HELPS -->
+<section>
+  <h2 class="section-title">How This Portal Will Help</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Students</h3>
+      <p>Easy learning with step-by-step courses.</p>
+    </div>
+
+    <div class="card">
+      <h3>Researchers</h3>
+      <p>Access to datasets and tools.</p>
+    </div>
+
+    <div class="card">
+      <h3>Institutions</h3>
+      <p>Support digital teaching methods.</p>
+    </div>
+
+    <div class="card">
+      <h3>Professionals</h3>
+      <p>Upgrade skills and knowledge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOME PAGE IMAGES -->
+<!-- <section>
+  <h2 class="section-title">Learning Environment</h2>
+  <div class="gallery">
+    <img src="https://source.unsplash.com/800x600/?satellite" alt="">
+    <img src="https://source.unsplash.com/800x600/?space,earth" alt="">
+    <img src="https://source.unsplash.com/800x600/?gis,map" alt="">
+  </div>
+</section> -->
+
+<!-- LOCATION -->
+<section>
+  <h2 class="section-title">Our Location</h2>
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps?q=ISRO%20Bangalore&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 ISRO Remote Sensing Education Portal
+</footer>
+
+</body>
+</html>

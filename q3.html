@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QGIS Module 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+.main-header{
+background:#0b3c5d;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{
+color:white;
+font-size:22px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+.home-hero{
+height:93vh;
+background:url("images/basiccor.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:50px;
+margin-top:338px;
+color:white;
+text-align:center;
+border-radius:10px;
+}
+
+.section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+color:#0b3c5d;
+margin-bottom:20px;
+}
+
+h3{
+margin-top:20px;
+color:#0b3c5d;
+}
+
+.back-btn{
+display:block;
+margin:30px auto;
+padding:10px 25px;
+background:#1e90ff;
+color:white;
+text-align:center;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header class="main-header">
+<div class="logo">
+<h1>ISRO Remote Sensing Education Portal</h1>
+</div>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="feature.html">Features</a>
+<a href="abt.html">About</a>
+</nav>
+</header>
+
+<section class="home-hero">
+<div class="overlay">
+<h2>Module 3: GIS Analysis in QGIS</h2>
+<p>Learn analysis tools and map creation</p>
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="title">Course Content</h2>
+
+<h3>1. Buffering</h3>
+<p>Buffering creates zones around features such as roads or rivers. It helps analyze nearby areas and impacts.</p>
+
+<h3>2. Overlay Analysis</h3>
+<p>Overlay combines multiple layers to produce new insights. It is useful for decision-making and spatial planning.</p>
+
+<h3>3. Map Creation</h3>
+<p>QGIS provides layout tools to design maps with legends, scale, and titles.</p>
+
+<h3>4. Exporting Maps</h3>
+<p>Maps can be exported as PDF or images for sharing and printing.</p>
+
+<!-- <img src="images/qgis3.jpg" style="width:100%;margin-top:20px;border-radius:10px;"> -->
+
+<a href="index.html" class="back-btn">← Back</a>
+
+</section>
+
+</body>
+</html>

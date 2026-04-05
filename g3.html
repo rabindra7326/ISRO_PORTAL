@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GIS Module 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* SAME DESIGN — NO CHANGE */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+.main-header{
+background:#0b3c5d;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{
+color:white;
+font-size:22px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#00e5ff;
+}
+
+.home-hero{
+height:93vh;
+background:url("images/basiccor.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:50px;
+margin-top:338px;
+border-radius:10px;
+text-align:center;
+color:white;
+}
+
+.overlay h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+color:#0b3c5d;
+margin-bottom:20px;
+}
+
+h3{
+margin-top:20px;
+color:#0b3c5d;
+}
+
+footer{
+background:#0b3c5d;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+.back-btn{
+display:block;
+margin:30px auto;
+padding:10px 25px;
+background:#1e90ff;
+color:white;
+text-align:center;
+width:max-content;
+text-decoration:none;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#00bfff;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="logo">
+    <h1>ISRO Remote Sensing Education Portal</h1>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="feature.html">Features</a>
+    <a href="abt.html">About</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="overlay">
+    <h2>Module 3: GIS Analysis & Applications</h2>
+    <p>Understanding spatial analysis and real-world GIS applications</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+
+<h2 class="title">Course Content</h2>
+
+<h3>1. Spatial Analysis</h3>
+<p>
+Spatial analysis is the process of examining the locations, attributes, and relationships of features in spatial data. 
+It helps in identifying patterns and trends on maps, which is useful for decision-making.
+</p>
+
+<h3>2. Overlay Analysis</h3>
+<p>
+Overlay analysis involves combining multiple data layers to produce new information. 
+For example, combining soil and rainfall maps can help determine suitable areas for agriculture.
+</p>
+
+<h3>3. Buffering</h3>
+<p>
+Buffering creates zones around map features such as roads or rivers. 
+It is used to analyze areas within a specific distance, such as identifying areas affected by pollution.
+</p>
+
+<h3>4. Network Analysis</h3>
+<p>
+Network analysis is used to study transportation routes and find the shortest or fastest paths. 
+It is widely used in GPS navigation systems.
+</p>
+
+<h3>5. Applications of GIS</h3>
+<p>
+GIS is used in various fields such as urban planning, environmental monitoring, disaster management, 
+agriculture, and transportation systems.
+</p>
+
+<h3>6. Real-world Uses</h3>
+<p>
+Governments and organizations use GIS for planning cities, managing natural resources, 
+and responding to emergencies like floods and earthquakes.
+</p>
+
+<!-- <img src="images/gis3.jpg" style="width:100%;margin-top:20px;border-radius:10px;"> -->
+
+<a href="index.html" class="back-btn">← Back</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 ISRO Remote Sensing Education Portal</p>
+</footer>
+
+</body>
+</html>

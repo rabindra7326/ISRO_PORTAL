@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Satellite Image Processing - Module 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#f4f6f9;}
+
+.main-header{
+background:#0b3c5d;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{color:white;}
+
+.navbar a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.home-hero{
+height:93vh;
+background:url("images/basiccor.jpg");
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:50px;
+margin-top:338px;
+color:white;
+text-align:center;
+}
+
+.section{
+padding:60px;
+max-width:1100px;
+margin:auto;
+background:white;
+}
+
+.title{text-align:center;color:#0b3c5d;}
+h3{margin-top:20px;color:#0b3c5d;}
+
+.back-btn{
+display:block;
+margin:30px auto;
+padding:10px;
+background:#1e90ff;
+color:white;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+<div class="logo"><h1>ISRO Remote Sensing Education Portal</h1></div>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="feature.html">Features</a>
+<a href="abt.html">About</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="home-hero">
+<div class="overlay">
+<h2>Module 3: Image Classification & Analysis</h2>
+<p>Understanding classification and interpretation of satellite images</p>
+</div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+
+<h2 class="title">Course Content</h2>
+
+<h3>1. Supervised Classification</h3>
+<p>
+Supervised classification is a technique where the user provides training data
+to classify satellite images. The analyst selects sample pixels for each class
+such as water, vegetation, or urban areas, and the system uses these samples
+to categorize the rest of the image.
+</p>
+
+<h3>2. Unsupervised Classification</h3>
+<p>
+In unsupervised classification, the system automatically groups pixels into
+clusters based on their spectral properties. The user then interprets these
+clusters and assigns them to meaningful classes.
+</p>
+
+<h3>3. Accuracy Assessment</h3>
+<p>
+Accuracy assessment is used to evaluate how correctly the classification has
+been performed. It compares classified data with reference data to measure
+reliability and performance.
+</p>
+
+<h3>4. Applications</h3>
+<p>
+Image classification is widely used in land use mapping, agriculture monitoring,
+forest management, urban planning, and disaster analysis.
+</p>
+
+<!-- <img src="images/image3.jpg" style="width:100%;margin-top:20px;border-radius:10px;"> -->
+
+<a href="index.html" class="back-btn">← Back</a>
+
+</section>
+
+</body>
+</html>
